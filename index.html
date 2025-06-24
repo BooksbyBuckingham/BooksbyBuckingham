@@ -9,10 +9,14 @@
     header, footer { background: #1e1e1e; color: white; padding: 1rem; text-align: center; }
     nav a { color: white; margin: 0 1rem; text-decoration: none; }
     .container { padding: 2rem; max-width: 1000px; margin: auto; }
-    h1, h2 { color: #1e1e1e; }
-    .service-tier { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h1, h2, h3 { color: #1e1e1e; }
+    .pricing-table, .payroll-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .pricing-table th, .pricing-table td, .payroll-table th, .payroll-table td {
+      border: 1px solid #ccc; padding: 0.5rem; text-align: left;
+    }
     .cta { text-align: center; margin: 2rem 0; }
     .cta a { background: #1e1e1e; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; }
+    .highlight { background: #ffeeba; padding: 1rem; border-left: 5px solid #f0ad4e; margin-bottom: 2rem; }
   </style>
 </head>
 <body>
@@ -20,67 +24,68 @@
     <h1>Books by Buckingham</h1>
     <nav>
       <a href="#home">Home</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#payroll">Payroll</a>
       <a href="#about">About</a>
-      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="container" id="home">
-    <h2>Helping Small Businesses Master Their Finances</h2>
-    <p>Offering expert bookkeeping, financial advisory, and CPA-level assurance services to empower your business with clarity and confidence.</p>
+    <div class="highlight">
+      <h2>🎉 Special Offer: 75% OFF Your First Month & 25% OFF Your Second Month! 🎉</h2>
+      <p>Get professional bookkeeping and payroll services tailored to your business — at a great introductory rate.<br />
+      <strong>Offer applies to new clients only</strong></p>
+    </div>
+    <p>Books by Buckingham — Bookkeeping Services Pricing<br />
+    <strong>(414) 702-1662</strong><br />
+    Choose the plan that fits your business size and needs.</p>
+  </section>
+
+  <section class="container" id="pricing">
+    <h2>Bookkeeping Plans</h2>
+    <table class="pricing-table">
+      <thead>
+        <tr><th>Client Type</th><th>Monthly Base Price</th><th>Bank Account Fee</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Solo Freelancer / 1-Owner LLC</td><td>$300 / month</td><td>Includes 2 accounts; $50/month each for 3rd & 4th accounts (max 4)</td><td>Ideal for solo entrepreneurs or consultants with low transaction volume.</td></tr>
+        <tr><td>Small Business (2–9 employees)</td><td>$500 / month</td><td>Includes 2 accounts; $50/month each for 3rd & 4th accounts (max 4)</td><td>Designed for small teams with moderate transaction volume.</td></tr>
+        <tr><td>Medium Business (10–20 employees or high volume)</td><td>$900 / month</td><td>Includes 2 accounts; $50/month each for 3rd & 4th accounts (max 4)</td><td>For businesses with more employees or high transaction volume (over 300 transactions/month)</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Bookkeeping includes:</strong> Transaction Recording & Categorization, Bank and Credit Card Reconciliation, Monthly Financial Reporting, and Ongoing Support & Communication.</p>
+    <p><strong>Important Notes:</strong><br />
+    - High volume means more than 300 transactions per month across all bank and credit accounts.<br />
+    - Pricing includes monthly reconciliation, financial reporting (P&L, Balance Sheet), and email support.<br />
+    - You may choose bookkeeping only or bookkeeping + payroll — but I do not offer payroll-only services.<br />
+    - Custom packages are available for businesses exceeding these limits or with special requirements — just reach out!</p>
+  </section>
+
+  <section class="container" id="payroll">
+    <h2>Payroll Services</h2>
+    <table class="payroll-table">
+      <thead><tr><th>Service</th><th>Pricing</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>Payroll Service</td><td>$20 per employee / month</td><td>Includes direct deposit, tax filings, W-2s, and paystub delivery. Perfect add-on for growing teams.</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Example Quote:</strong><br />
+    “For your business with 4 bank accounts and 5 employees, your monthly fee would be: <br />
+     $500 (small business base) + $100 (for accounts 3 & 4) + $100 (payroll for 5 employees) = <strong>$700/month</strong>.”</p>
   </section>
 
   <section class="container" id="about">
-    <h2>About Us</h2>
-    <p>With years of experience in auditing at CLA and a deep understanding of small business accounting needs, Books by Buckingham provides reliable and insightful financial services designed to help your business grow. We're on the path to CPA licensure and committed to bringing you firm-level expertise with boutique service quality.</p>
-  </section>
-
-  <section class="container" id="services">
-    <h2>Our Services</h2>
-
-    <div class="service-tier">
-      <h3>📘 Basic Bookkeeping</h3>
-      <ul>
-        <li>Monthly categorization</li>
-        <li>Bank & credit card reconciliations</li>
-        <li>Monthly financial statements</li>
-        <li>Email support</li>
-      </ul>
-      <p><strong>Starting at $300/month</strong></p>
-    </div>
-
-    <div class="service-tier">
-      <h3>📗 Advisory Plus</h3>
-      <ul>
-        <li>Everything in Basic Bookkeeping</li>
-        <li>Budgeting & forecasting</li>
-        <li>KPI dashboards</li>
-        <li>Monthly strategy meetings</li>
-      </ul>
-      <p><strong>Starting at $1,500/month</strong></p>
-    </div>
-
-    <div class="service-tier">
-      <h3>📕 CPA Review & Assurance (Coming Soon)</h3>
-      <ul>
-        <li>Compilations & reviews</li>
-        <li>Financial statement preparation</li>
-        <li>Annual or quarterly engagements</li>
-      </ul>
-      <p><strong>Price based on scope</strong></p>
-    </div>
-  </section>
-
-  <section class="cta">
-    <h2>Book Your Free Consultation</h2>
-    <a href="#contact">Schedule a Call</a>
+    <h2>Who I Am</h2>
+    <p>Hi, I’m Robert Buckingham — a dedicated accounting professional with a degree in accounting, years of hands-on experience, and a passion for helping small businesses stay financially strong.</p>
+    <p>Before starting my career in accounting, I proudly served in the U.S. Army for 6 years, where I learned the discipline, precision, and integrity that I now bring to every client relationship. After transitioning to civilian life, I worked in public accounting roles and am currently pursuing my CPA to deepen my expertise even further.</p>
+    <p>I started Books by Buckingham to give business owners peace of mind knowing their books are clean, accurate, and handled with care. Whether you’re a solo entrepreneur or running a growing team, I’m here to make your financial life easier — so you can focus on what you do best.</p>
   </section>
 
   <section class="container" id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:hello@booksbybuckingham.com">hello@booksbybuckingham.com</a></p>
-    <p>Phone: (555) 123-4567</p>
+    <p>Email: <a href="mailto:robertbuckingham16@hotmail.com">robertbuckingham16@hotmail.com</a></p>
+    <p>Phone: (414) 702-1662</p>
     <p>Location: Milwaukee, WI (serving clients nationwide)</p>
   </section>
 
